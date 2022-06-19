@@ -22,4 +22,9 @@ for num = 1:Ns
     E(num)=sum(I.*exp(1j*(Wavenumber*X*sind(theta(num))+alpha)))+1e-3;
 end
 %% plot figure
-plot(theta,db(E));
+figure()
+plot(theta,db(E),'LineWidth',2);
+gird on
+figure()
+plot(theta,db(E)-max(db(E)),'LineWidth',2);%normalized
+grid on 
