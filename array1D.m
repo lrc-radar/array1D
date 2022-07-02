@@ -24,7 +24,7 @@ end
 %% plot figure
 figure()
 plot(theta,db(E),'LineWidth',2);
-gird on
+grid on
 figure()
 plot(theta,db(E)-max(db(E)),'LineWidth',2);%normalized
 grid on 
